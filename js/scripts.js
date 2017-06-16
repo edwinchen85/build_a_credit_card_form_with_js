@@ -45,6 +45,11 @@ $( function() {
     $( "h2 span" ).removeClass( "active" );
   } );
 
+  // Make sure the submit isn't allowed to do anything if disabled.
+  paymentButton.click( function( event ) {
+    event.preventDefault();
+  } );
+
   function finishTyping( id, value ) {
     switch( id ) {
       case "cc-number":
