@@ -35,6 +35,11 @@ $( function() {
     clearTimeout( timer );
   } );
 
+  // On field focus, we add the active class on the corresponding span in the page subtitle.
+  ccInputs.focus( function() {
+    $( "#title-" + $( this ).attr( "id" ) ).addClass( "active" );
+  } );
+
   function finishTyping( id, value ) {
     switch( id ) {
       case "cc-number":
