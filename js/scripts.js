@@ -7,7 +7,9 @@ $( function() {
       expDate = $( "#cc-expiration-date" ),
       cvv = $( "#cc-cvv" ),
       paymentButton = $( "#submit-payment" ),
-      ccInputs = $( ".cc-input" );
+      ccInputs = $( ".cc-input" ),
+      timerInterval = 1000,
+      timer;
 
   // Set the masks.
   number.inputmask( "9999 9999 9999 9[999] [999]", { "placeholder": " " } );
