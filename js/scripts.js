@@ -26,4 +26,9 @@ $( function() {
     timer = setTimeout( finishTyping, timerInterval, $( this ).attr( "id" ), $( this ).val() );
   } );
 
+  // On keydown we stop the current timer.
+  ccInputs.keydown( function() {
+
+  } );
+
 });
