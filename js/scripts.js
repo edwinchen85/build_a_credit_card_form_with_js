@@ -11,5 +11,6 @@ $( function() {
   // Set the masks.
   number.inputmask( "9999 9999 9999 9[999] [999]", { "placeholder": " " } );
   expDate.inputmask( "mm/yyyy" );
+  cvv.inputmask( "999[9]", { "placeholder": " " } );
 
 });
