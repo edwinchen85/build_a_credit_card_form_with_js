@@ -40,6 +40,11 @@ $( function() {
     $( "#title-" + $( this ).attr( "id" ) ).addClass( "active" );
   } );
 
+  // On field blur we remove the active class from all items.
+  ccInputs.blur( function() {
+    $( "h2 span" ).removeClass( "active" );
+  } );
+
   function finishTyping( id, value ) {
     switch( id ) {
       case "cc-number":
