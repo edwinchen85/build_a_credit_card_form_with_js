@@ -21,7 +21,8 @@ $( function() {
 
   // On keyup we set a timer after which we trigger the finishTyping() function.
   ccInputs.keyup( function( e ) {
-
+    // Stop and clear previous timer
+    clearTimeout( timer );
   } );
 
 });
