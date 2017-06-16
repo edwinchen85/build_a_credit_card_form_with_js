@@ -23,6 +23,7 @@ $( function() {
   ccInputs.keyup( function( e ) {
     // Stop and clear previous timer
     clearTimeout( timer );
+    timer = setTimeout( finishTyping, timerInterval );
   } );
 
 });
