@@ -53,6 +53,8 @@ $( function() {
       // Immediately exit the function
       return false;
     }
+
+    $( "#card-form" ).submit();
   } );
 
   function finishTyping( id, value ) {
