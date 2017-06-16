@@ -48,6 +48,11 @@ $( function() {
   // Make sure the submit isn't allowed to do anything if disabled.
   paymentButton.click( function( event ) {
     event.preventDefault();
+
+    if ( $( this ).hasClass( "disabled" ) ) {
+      // Immediately exit the function
+      return false;
+    }
   } );
 
   function finishTyping( id, value ) {
