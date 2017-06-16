@@ -33,7 +33,17 @@ $( function() {
   } );
 
   function finishTyping( id, value ) {
-
+    switch( id ) {
+      case "cc-number":
+        console.log("cc-number");
+        break;
+      case "cc-expiration-date":
+        console.log("cc-expiration-date");
+        break;
+      case "cc-cvv":
+        console.log("cc-cvv");
+        break;
+    }
   }
 
 });
