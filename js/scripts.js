@@ -14,4 +14,7 @@ $( function() {
   expDate.inputmask( "mm/yyyy" );
   cvv.inputmask( "999[9]", { "placeholder": " " } );
 
+  // Focus the first field.
+  number.focus();
+
 });
