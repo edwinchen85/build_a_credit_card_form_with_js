@@ -21,9 +21,12 @@ $( function() {
 
   // On keyup we set a timer after which we trigger the finishTyping() function.
   ccInputs.keyup( function( e ) {
-    // Stop and clear previous timer
-    clearTimeout( timer );
-    timer = setTimeout( finishTyping, timerInterval, $( this ).attr( "id" ), $( this ).val() );
+    // If keycode is not 'tab' or 'shift tab'
+    if ( e.keyCode != '9' && e.keyCode != '16' ) {
+      // Stop and clear previous timer
+      clearTimeout( timer );
+      timer = setTimeout( finishTyping, timerInterval, $( this ).attr( "id" ), $( this ).val() );
+    }
   } );
 
   // On keydown we stop the current timer.
