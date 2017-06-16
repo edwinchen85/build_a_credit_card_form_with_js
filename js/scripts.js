@@ -28,7 +28,8 @@ $( function() {
 
   // On keydown we stop the current timer.
   ccInputs.keydown( function() {
-
+    // Stop and clear previous timer
+    clearTimeout( timer );
   } );
 
 });
