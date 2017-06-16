@@ -32,4 +32,8 @@ $( function() {
     clearTimeout( timer );
   } );
 
+  function finishTyping( id, value ) {
+
+  }
+
 });
