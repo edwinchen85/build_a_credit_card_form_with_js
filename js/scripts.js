@@ -93,7 +93,13 @@ $( function() {
           numberOK = valid_credit_card( validationValue );
         }
 
-        console.log(numberOK);
+        // If the credit card number is valid, move on, otherwise add error class and disable payment button.
+        if ( numberOK ) {
+          number.removeClass( "error" );
+          expDate.focus();
+        } else {
+          number.addClass( "error" );
+        }
 
         break;
       case "cc-expiration-date":
