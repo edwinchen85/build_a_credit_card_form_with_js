@@ -76,3 +76,21 @@ form label {
 .input-fields-container {
   margin-bottom: 3.75em;
 }
+
+.cc-input {
+  max-width: 100%;
+  color: #3B3B3B;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid #ECECEC;
+  padding-bottom: .5em;
+}
+
+.cc-input:focus {
+  border-bottom-color: #3B3B3B;
+}
+
+.cc-input.error {
+  border-bottom-color: #BD4B3A;
+  color: #BD4B3A;
+}
