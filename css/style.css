@@ -123,3 +123,30 @@ form label {
 #cc-cvv-container {
   margin-right: 0;
 }
+
+#submit-payment {
+  background-color: #3993CD;
+  border: 1px solid #286790;
+  border-radius: 50px;
+  height: 3.5em;
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: 700;
+  width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 3.5em;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+#submit-payment:not(.disabled):hover {
+  background-color: #286790;
+}
+
+.disabled {
+  cursor: default;
+  opacity: .5;
+}
