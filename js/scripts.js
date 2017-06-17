@@ -34,7 +34,8 @@ $( function() {
       paymentButton = $( "#submit-payment" ),
       ccInputs = $( ".cc-input" ),
       timerInterval = 1000,
-      timer;
+      timer,
+      numberOK = false, expDateOK, cvvOK;
 
   // Set the masks.
   number.inputmask( "9999 9999 9999 9[999] [999]", { "placeholder": " " } );
