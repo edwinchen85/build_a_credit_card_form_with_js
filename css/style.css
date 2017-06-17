@@ -72,3 +72,7 @@ form label {
   display: block;
   margin-bottom: .5em;
 }
+
+.input-fields-container {
+  margin-bottom: 3.75em;
+}
