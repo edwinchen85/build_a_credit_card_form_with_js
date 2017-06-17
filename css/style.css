@@ -124,6 +124,22 @@ form label {
   margin-right: 0;
 }
 
+.cc-generic #cc-number {
+  background-image: url( ../img/cc-generic.svg );
+}
+
+.cc-visa #cc-number {
+  background-image: url( ../img/cc-visa.svg );
+}
+
+.cc-mastercard #cc-number {
+  background-image: url( ../img/cc-mastercard.svg );
+}
+
+.cc-amex #cc-number {
+  background-image: url( ../img/cc-amex.svg );
+}
+
 #submit-payment {
   background-color: #3993CD;
   border: 1px solid #286790;
