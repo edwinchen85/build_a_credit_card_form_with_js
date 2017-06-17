@@ -146,7 +146,16 @@ $( function() {
 
         break;
       case "cc-cvv":
-        console.log("cc-cvv");
+        // Validate it.
+        cvvOK = validCVV( validationValue );
+
+        if ( cvvOK ) {
+          cvv.removeClass( "error" );
+          paymentButton.focus();
+        } else {
+          cvv.addClass( "error" );
+        }
+
         break;
     }
   }
