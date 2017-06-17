@@ -52,6 +52,28 @@ function validCVV( cvv ) {
 
 
 /*
+ * Retrieve the card issuing bank.
+*/
+function getCardType ( ccNumber ) {
+  // Define regular expressions.
+  var cardPatterns = {
+    visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
+    mastercard: /^5[1-5][0-9]{14}$/,
+    amex: /^3[47][0-9]{13}$/
+  };
+
+  for ( var cardPattern in cardPatterns ) {
+    if ( cardPatterns[cardPattern].test( ccNumber ) ) {
+      return cardPattern;
+    }
+  }
+
+  // If nothing matches, return false.
+  return false;
+}
+
+
+/*
  * On document ready.
  */
 
