@@ -37,3 +37,25 @@ h2 span.active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.card-container header,
+.card-container main,
+.card-container footer {
+  padding: 3.75em;
+}
+
+.card-container header {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 2em;
+}
+
+.card-container main {
+  padding-bottom: 0;
+}
+
+.card-container footer {
+  padding-top: 0;
+  color: #7F7F7F;
+  font-size: .75em;
+  text-align: center;
+}
