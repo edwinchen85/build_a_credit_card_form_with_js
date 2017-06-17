@@ -27,3 +27,13 @@ h2 {
 h2 span.active {
   color: #3993cd;
 }
+
+.card-container {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 42.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
