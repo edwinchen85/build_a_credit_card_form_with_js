@@ -43,6 +43,15 @@ function validExpirationDate( date ) {
 
 
 /*
+ * Validates the security code (CVV).
+*/
+function validCVV( cvv ) {
+  // The CVV must be at least 3 digits.
+  return cvv.length > 2;
+}
+
+
+/*
  * On document ready.
  */
 
