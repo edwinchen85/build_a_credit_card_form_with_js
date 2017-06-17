@@ -7,3 +7,5 @@ Resources:
 - [Luhn's Algorithm](http://gist.github.com/DiegoSalazar/4075533)
 
 [View demo site here.](http://edwinchen.co/build_a_credit_card_form_with_js/)
+
+![Preview](screenshot.png)
