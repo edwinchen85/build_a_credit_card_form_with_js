@@ -27,7 +27,11 @@ function valid_credit_card(value) {
  * Validates the expiration date.
 */
 function validExpirationDate( date ) {
-
+  var currentDate = new Date(),
+      currentMonth = currentDate.getMonth() + 1,  // Zero based index
+      currentYear = currentDate.getFullYear(),
+      expirationMonth = Number( date.substr( 0, 2 ) ),
+      expirationYear = Number( date.substr( 3, date.length ) );
 }
 
 
