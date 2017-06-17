@@ -122,7 +122,11 @@ $( function() {
 
         break;
       case "cc-expiration-date":
-        console.log("cc-expiration-date");
+        // If the string doesn't have any "m" or "y" letters in there, proceed to validate
+        if ( validationValue.indexOf( "m" ) == -1 && validationValue.indexOf( "y" ) == -1 ) {
+          expDateOK = validExpirationDate( validationValue );
+        }
+
         break;
       case "cc-cvv":
         console.log("cc-cvv");
