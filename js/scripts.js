@@ -153,6 +153,9 @@ $( function() {
           number.addClass( "error" );
         }
 
+        // Switch the card icons depending on the type.
+        number.parent().attr( "class", cardClass );
+
         break;
       case "cc-expiration-date":
         // If the string doesn't have any "m" or "y" letters in there, proceed to validate
