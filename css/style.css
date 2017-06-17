@@ -2,3 +2,10 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+
+body {
+  background-color: #343b50;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
