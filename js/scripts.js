@@ -166,7 +166,7 @@ $( function() {
         // If the expiration date is valid, move on, otherwise add error class and disable payment button.
         if ( expDateOK ) {
           expDate.removeClass( "error" );
-          cvv.focus();
+          cvv.parent().fadeIn( "fast", function() { cvv.focus(); } );
         } else {
           expDate.addClass( "error" );
         }
