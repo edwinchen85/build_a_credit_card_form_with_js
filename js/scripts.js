@@ -32,6 +32,13 @@ function validExpirationDate( date ) {
       currentYear = currentDate.getFullYear(),
       expirationMonth = Number( date.substr( 0, 2 ) ),
       expirationYear = Number( date.substr( 3, date.length ) );
+
+  // The expiration date must be at least 1 month ahead of the current date.
+  if ( ( expirationYear < currentYear ) || ( expirationYear == currentYear && expirationMonth <= currentMonth ) ) {
+    return false;
+  }
+
+  return true;
 }
 
 
