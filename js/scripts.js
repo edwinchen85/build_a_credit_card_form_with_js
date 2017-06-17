@@ -158,6 +158,13 @@ $( function() {
 
         break;
     }
+
+    // Update the payment button status.
+    if ( numberOK && expDateOK && cvvOK ) {
+      paymentButton.removeClass( "disabled" );
+    } else {
+      paymentButton.addClass( "disabled" );
+    }
   }
 
 });
