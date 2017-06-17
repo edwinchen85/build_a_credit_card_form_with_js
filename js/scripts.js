@@ -83,6 +83,8 @@ $( function() {
   } );
 
   function finishTyping( id, value ) {
+    var validationValue = value.replace( / /g, '' );
+
     switch( id ) {
       case "cc-number":
         console.log("cc-number");
