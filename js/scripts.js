@@ -88,7 +88,13 @@ $( function() {
 
     switch( id ) {
       case "cc-number":
-        console.log("cc-number");
+        // If the number length is higher than 0, check with valid_credit_card
+        if ( validationValue.length > 0 ) {
+          numberOK = valid_credit_card( validationValue );
+        }
+
+        console.log(numberOK);
+
         break;
       case "cc-expiration-date":
         console.log("cc-expiration-date");
