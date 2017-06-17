@@ -64,3 +64,11 @@ form {
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
 }
+
+form label {
+  color: #BABABA;
+  font-size: .75em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: .5em;
+}
