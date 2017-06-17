@@ -148,7 +148,7 @@ $( function() {
         // If the credit card number is valid, move on, otherwise add error class and disable payment button.
         if ( numberOK ) {
           number.removeClass( "error" );
-          expDate.focus();
+          expDate.parent().fadeIn( "fast", function() { expDate.focus(); } );
         } else {
           number.addClass( "error" );
         }
