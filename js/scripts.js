@@ -24,6 +24,14 @@ function valid_credit_card(value) {
 
 
 /*
+ * Validates the expiration date.
+*/
+function validExpirationDate( date ) {
+
+}
+
+
+/*
  * On document ready.
  */
 
