@@ -127,6 +127,14 @@ $( function() {
           expDateOK = validExpirationDate( validationValue );
         }
 
+        // If the expiration date is valid, move on, otherwise add error class and disable payment button.
+        if ( expDateOK ) {
+          expDate.removeClass( "error" );
+          cvv.focus();
+        } else {
+          expDate.addClass( "error" );
+        }
+
         break;
       case "cc-cvv":
         console.log("cc-cvv");
