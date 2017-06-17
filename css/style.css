@@ -77,6 +77,12 @@ form label {
   margin-bottom: 3.75em;
 }
 
+.input-fields-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .cc-input {
   max-width: 100%;
   color: #3B3B3B;
@@ -93,4 +99,27 @@ form label {
 .cc-input.error {
   border-bottom-color: #BD4B3A;
   color: #BD4B3A;
+}
+
+#cc-number-container,
+#cc-expiration-date-container,
+#cc-cvv-container {
+  float: left;
+  margin-right: 2em;
+}
+
+#cc-number {
+  width: 17em;
+}
+
+#cc-expiration-date {
+  width: 8em;
+}
+
+#cc-cvv {
+  width: 6em;
+}
+
+#cc-cvv-container {
+  margin-right: 0;
 }
