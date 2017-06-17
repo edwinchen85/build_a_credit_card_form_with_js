@@ -134,7 +134,9 @@ $( function() {
   } );
 
   function finishTyping( id, value ) {
-    var validationValue = value.replace( / /g, '' );
+    var validationValue = value.replace( / /g, '' ),
+        cardType = getCardType( validationValue ),
+        cardClass = ( cardType != false ) ? "cc-" + cardType : "cc-generic";
 
     switch( id ) {
       case "cc-number":
