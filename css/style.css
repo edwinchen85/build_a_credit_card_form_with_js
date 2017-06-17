@@ -124,6 +124,11 @@ form label {
   width: 6em;
 }
 
+#cc-expiration-date-container,
+#cc-cvv-container {
+  display: none;
+}
+
 #cc-cvv-container {
   margin-right: 0;
 }
