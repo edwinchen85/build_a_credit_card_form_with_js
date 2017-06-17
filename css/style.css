@@ -110,6 +110,10 @@ form label {
 
 #cc-number {
   width: 17em;
+  padding-left: 3em;
+  background-color: #FFF;
+  background-position: 1px 0px;
+  background-repeat: no-repeat;
 }
 
 #cc-expiration-date {
