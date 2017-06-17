@@ -142,7 +142,7 @@ $( function() {
       case "cc-number":
         // If the number length is higher than 0, check with valid_credit_card
         if ( validationValue.length > 0 ) {
-          numberOK = valid_credit_card( validationValue );
+          numberOK = valid_credit_card( validationValue ) && getCardType( validationValue );
         }
 
         // If the credit card number is valid, move on, otherwise add error class and disable payment button.
